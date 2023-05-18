@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
+
 :root {
     --primary-color: #047aed;
     --secondary-color: #1c3fa8;
@@ -33,7 +34,7 @@ a{
 
 h1,
 h2{
-    font-weight: 300;
+    font-weight: 300px;
     line-height: 1.2;
     margin: 10px 0;
 }
@@ -176,15 +177,20 @@ pre {
 
 /* Stats */
 .stats {
-    padding-top: 100px;
+  margin:5vh ;
+    padding-top: 10vh;
     animation: slideInFromBottom 1s ease-in;
   }
   
   .stats-heading {
     max-width: 500px;
-    margin: auto;
-  }
-  
+    position: absolute;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+}
+.stats .grid{
+    margin-top: 15vh;
+}
   .stats .grid h3 {
     font-size: 35px;
   }
@@ -192,6 +198,10 @@ pre {
   .stats .grid p {
     font-size: 20px;
     font-weight: bold;
+  }
+
+  .grid{
+    padding-top: 2vh;
   }
 
   /* Cli */
